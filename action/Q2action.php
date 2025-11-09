@@ -4,13 +4,13 @@ namespace chercheurs\action;
 
 use chercheurs\action\Action;
 
-class Q1action extends Action{
+class Q2action extends Action{
 
     public function execute() : string{
         $html = '';
         $html = <<<HTML
-        <h1> Détermination de la liste des articles écrits par un auteur donné </h1> 
-        <form action="?action=displayQ1action" method="POST">
+        <h1> Affichage de la liste des co-auteurs ayant travaillé avec un chercheur donné. </h1> 
+        <form action="?action=displayQ2action" method="POST">
             <label for="nom">Nom :</label>
             <input name="nom" id="nom" type="text">
 
